@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <section class="login-main">
+    <div class="form-container">
+        <p class="title">Welcome back</p>
+        <form class="form">
+            <input type="email" id="email" placeholder="Email" onkeyup="validationmail()"><span id="displaymail"></span>
+            <input type="password" id="pass" placeholder="Password" onkeyup="validationpass()"><span id="displaypass"></span>
+  
+            <p class="page-link">
+                <span class="page-link-label"><a href="./forgetpass.html">Forgot Password?</a></span>
+            </p>
+            <button class="form-btn" onclick="login()">Log in</button>
+        </form>
+        <p class="sign-up-label">
+            Don't have an account?<span class="sign-up-link">Sign up</span>
+        </p>
+    </div>
+</section>
+<script src="./js/travelagency.js"></script>
+</body>
+
+</html>

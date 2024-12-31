@@ -1,0 +1,506 @@
+@font-face {
+    font-family:head;
+    src: url('../assets/font/GreatVibes-Regular.ttf');
+}
+* {
+    margin: 0px;
+}
+
+.navigation {
+    background-color: #001d3d;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav_icon img {
+    display: none;
+}
+
+.nav_icon_main {
+    display: none;
+}
+
+.nav-link {
+    padding: 10px;
+    margin: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-link::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #01b3a7;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: .4s;
+}
+
+.nav-link:hover:after {
+    width: 70%;
+}
+
+.logo_img {
+    height: 45px;
+    padding: 20px;
+}
+
+.img_social_main {
+    display: flex;
+    align-items: center;
+}
+
+.Btn_logo {
+    border: none;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Btn_logo a {
+    text-decoration: none;
+}
+
+
+.main_img img {
+    height: 97vh;
+    width: 100%;
+}
+#service_head_card {
+    text-align: center;
+    font-family:head;
+    font-size: 3rem;
+    margin: 30px;
+}
+.card_main {
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f9fc;
+}
+.card_main_review
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+}
+.card_image_review img
+{
+  margin: 25px;
+  height: 50px;
+  width: 50px;
+}
+
+
+.people {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.people2 {
+    text-align: justify;
+    text-align: center;
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.people2:hover {
+    color: #01b3a7;
+}
+.form-main
+{
+    margin-left: 10%;
+}
+input[type='text'],input[type='number']
+{
+    height: 60px;
+    width: 30%;
+    margin: 10px;
+    padding: 5px;
+}
+#comment
+{
+    height: 150px;
+    width: 96%;
+    margin: 10px;
+    padding: 5px;
+}
+.btn
+{
+    margin: 15px;
+    background-color: #01b3a7;
+    border: none;
+    outline: none;
+    padding: 20px 70px;
+    font-size: 1rem;
+    color: white;
+}
+.question {
+    background-color: #f7f7f7;
+}
+
+.question-head {
+    display: inline-block;
+}
+
+#question-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#question-main img {
+    margin: 0px 0px 5% 11%;
+}
+
+#ans {
+    font-size: 18px;
+    color: rgb(7, 146, 7);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.faq {
+    margin-right: 5%;
+}
+
+.question-btn1,
+.question-btn2,
+.question-btn3,
+.question-btn4,
+.question-btn5 {
+    font-size: 1rem;
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    outline: none;
+    background-color: #01b3a7;
+}
+
+.question-ans1,
+.question-ans2,
+.question-ans3,
+.question-ans4,
+.question-ans5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    border-radius: 10px;
+    text-align: justify;
+    padding-top: 10px;
+    height: 16%;
+    width: 100%;
+    background-color: #f7eeee;
+    display: none;
+}
+
+.question-ans1 {
+    display: block;
+}
+.end {
+    background-color: #001d3d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer3 div {
+    position: relative;
+    text-align: justify;
+    color: white;
+    margin: 10px;
+    left: 20%;
+}
+
+.footer3 img {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+}
+
+.footer_contact {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+}
+
+.logo_main {
+    margin-left: 30px;
+}
+
+.footer2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.quick {
+    font-size: 15px;
+    margin-top: 10%;
+    color: white;
+}
+
+.footer_nav {
+    margin: 10px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer_nav:hover {
+    color: #01b3a7;
+}
+
+.footer_news {
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.footer_news:hover {
+    color: #50ba87;
+
+}
+
+@media only screen and (min-width:300px) and (max-width: 768px) {
+
+    .navigation {
+        justify-content: none;
+
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 30vh;
+    }
+
+    .nav_icon img {
+        padding: 20px;
+        background-color: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav_icon_main {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        display: block;
+    }
+
+    .nav-link {
+        padding: 10px;
+        margin: 10px 10px 10px -30vh;
+        font-size: 2.5rem;
+    }
+
+    .logo_img {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .img_social_main {
+        display: none;
+    }
+
+    .card_main_review {
+        margin-left: 22%;
+        display: block;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+    .card_image_review img {
+        width: 180px;
+        height: 180px;
+        margin: 20px;
+    }
+    .people_review{
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .card {
+        margin: 20px;
+        width: 500px;
+        height: 500px;
+        padding: 10px 20px 10% 20px;
+    }
+
+    .people2 {
+        font-size: 2.2rem;
+        margin: 10%;
+    }
+
+    .end {
+        grid-template-columns: none;
+    }
+
+    .quick {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    .footer_contact {
+        font-size: 3rem;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer_nav {
+        font-size: 2.2rem;
+    }
+
+    .footer_news {
+        font-size: 2.5rem;
+    }
+
+    .footer_nav::after {
+        left: 45%;
+    }
+
+    .footer_nav:hover:after {
+        width: 10%;
+    }
+
+    .footer3 div {
+        margin: 10px;
+    }
+
+    .footer3 img {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .footer_add {
+        text-align: center;
+        margin: 10px;
+        width: 79%;
+    }
+
+    .footer_add address {
+        font-size: 2.1rem;
+        width: 79%;
+    }
+
+    .footer_num {
+        text-align: center;
+        margin: 10px;
+        font-size: 2.1rem;
+        width: 79%;
+    }
+
+    .footer_mail {
+        text-align: center;
+        margin: 10px;
+        font-size: 2.1rem;
+        width: 79%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+
+    .nav-link {
+        margin: 25px 12px 12px 12px;
+    }
+    .people2 {
+        font-size: 1.2rem;
+        margin: 20px;
+    }
+    .card_main_review {
+        margin-left: 0%;
+        grid-template-columns:1fr 1fr;
+    }
+    .card_image_review img {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+    .people_review{
+        margin: 20px;
+        font-size: 1.2rem;
+    }
+    .card-3
+    {
+        display: none;
+    }
+    .card {
+        width: 330px;
+        height: 370px;
+        margin: 20px 20px 20px 10%;
+    }
+
+    .footer_add {
+        text-align: center;
+        width: 79%;
+        display: block;
+    }
+
+    .footer_num {
+        text-align: center;
+        width: 79%;
+    }
+
+    .footer_mail {
+        text-align: center;
+        width: 79%;
+    }
+
+}
+@media only screen and (min-width:993px) and (max-width: 1280px) {
+
+    .card {
+        margin: 7px;
+    }
+
+}

@@ -1,0 +1,1153 @@
+@font-face {
+    font-family: head;
+    src: url('../assets/font/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+    src: url(../assets/fonts/Born\ Again\ Demo.ttf);
+    font-family: substyle;
+}
+
+* {
+    margin: 0px;
+}
+
+.navigation {
+    background-color: #001d3d;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav_icon img {
+    display: none;
+}
+
+.nav_icon_main {
+    display: none;
+}
+
+.nav-link {
+    padding: 10px;
+    margin: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-link::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #01b3a7;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: .4s;
+}
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+.logo_img {
+    height: 45px;
+    padding: 20px;
+}
+
+.img_social_main {
+    display: flex;
+    align-items: center;
+}
+
+.Btn_logo {
+    border: none;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Btn_logo a {
+    text-decoration: none;
+}
+
+.img_banner {
+    height: 580px;
+    width: 100%;
+    background-size: cover;
+    opacity: 1;
+    animation: banner 20s infinite;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url('../assets/images/Travel\ Explore\ the\ World\ \(Banner\ \(Landscape\)\).png');
+    }
+
+    25% {
+        background-image: url('../assets/images/Dark\ Blue\ Gradient\ Travel\ Banner\ Landscape.png');
+    }
+
+    50% {
+        background-image: url('../assets/images/Blue\ Photocentric\ Tour\ and\ Travel\ Agency\ Banner.png');
+    }
+
+    75% {
+        background-image: url('../assets/images/5427796.jpg');
+    }
+
+    100% {
+        background-image: url('../assets/images/5352322.jpg');
+    }
+}
+
+#card_head1 {
+    background-color: #f7f7f7;
+}
+
+.card_head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: -35px;
+}
+
+.card_head img {
+    margin-left: 30px;
+}
+
+.card_img_txt {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    margin-left: 10%;
+    bottom: 35px;
+}
+
+.our_service {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    row-gap: 20px;
+}
+
+#service_head {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-family: head;
+}
+
+.our_service1 {
+
+    border: 8px solid #ece3e3;
+    width: 85%;
+    cursor: pointer;
+}
+
+.our_service1_txt:hover {
+    color: #01b3a7;
+}
+
+.our_service1 img {
+
+    height: 30px;
+    width: 30px;
+    margin: 25px 25px 42px 25px;
+}
+
+.our_service1_txt {
+    display: flex;
+    font-family: substyle;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: -20% 0px 0px 20px;
+}
+
+.service_content {
+    font-size: 1rem;
+    padding: 10%;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.our_service1:hover {
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+}
+
+#other_arrow {
+    display: flex;
+    justify-content: center;
+}
+
+#other_arrow img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 16px;
+    left: 5px;
+}
+
+.limited_offers_main {
+    margin: 10px 0px 0px 7%;
+    position: relative;
+}
+
+.limited_offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid rgb(189, 182, 182);
+    width: 95%;
+}
+
+.limited_offers img {
+    height: 100%;
+    width: 100%;
+}
+
+#limited_offers_contant {
+    padding: 11%;
+}
+
+#limited_offers_contant img {
+    height: 25px;
+    width: 35%;
+    margin: 10px 0px;
+}
+
+.rating_main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.review {
+    color: #9b9b9b;
+    font-size: 1rem;
+    margin: 16px 0px 0px 10px;
+}
+
+#offer_text {
+    text-align: justify;
+    margin-left: 1px;
+    color: #9b9b9b;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.offer_button {
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin: 15px 0px;
+    height: 57px;
+    width: 170px;
+    border: 1px solid black;
+}
+
+.offer_button:hover {
+    background: #01b3a7;
+    transition: 1s;
+    color: white;
+}
+
+.offer_button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#location {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#amount {
+    padding: 20px;
+    background-color: #01b3a7;
+    height: 5%;
+    width: 5%;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 61px;
+}
+
+.time {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 10%;
+    background-color: #01b3a7;
+    color: white;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+}
+
+#service_head_card {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: head;
+    margin: 30px;
+}
+
+#card_section {
+    background: #eef2f3;
+}
+
+.card_main {
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.card_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f9fc;
+}
+
+.card_image img {
+    margin: 10px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.card img:hover {
+    border: 5px solid #01b3a7;
+}
+
+.people {
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.people:hover {
+    color: #01b3a7;
+}
+
+.people2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #01b3a7;
+}
+
+.card_content {
+    padding: 15px;
+    color: black;
+}
+
+#first_class_main {
+    height: 50%;
+    width: 100%;
+    background-color: #01b3a7;
+}
+
+.first_class {
+    padding: 7%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.first_class_head {
+    font-size: 3.5rem;
+}
+
+.first_class_head2 {
+    font-size: 3rem;
+}
+
+.first_class_para {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.first_class_btn {
+    margin: 20px;
+    font-size: 1.1rem;
+    padding: 10px 40px;
+}
+
+.first_class_btn,
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.card_main_review {
+    margin-left: 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card_image_review img {
+    margin: 10px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+
+.card_image_review img:hover {
+    border: 3px solid #01b3a7;
+}
+
+.people_review {
+    margin: 15px 10px;
+    text-align: justify;
+    color: #9b9b9b;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#card_section_review {
+    background-color: #f7f7f7;
+}
+
+#email {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 15px 50px;
+}
+
+#Email_button {
+    padding: 15px 20px;
+}
+
+#Email_button:hover {
+    background-color: #01b3a7;
+}
+
+.blogpost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 20px 0px 6%;
+}
+
+.blogcard {
+    border: 1px solid black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.27);
+    background-color: white;
+    border: none;
+    height: 16%;
+    width: 80%;
+    position: relative;
+    top: -17%;
+    left: 35px;
+    text-align: center;
+    padding: 5% 0px;
+    cursor: pointer;
+}
+
+.blog-img img {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.blog-head:hover {
+    color: #01b3a7;
+}
+
+.blog-head {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.blog-sub {
+    margin: 10px;
+}
+
+.blog-date {
+    margin: 10px 10px 0px 10px;
+    color: #01b3a7;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.end {
+    background-color: #001d3d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer3 div {
+    position: relative;
+    text-align: justify;
+    color: white;
+    margin: 10px;
+    left: 20%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer3 img {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+}
+
+.footer_contact {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+}
+
+.logo_main {
+    margin-left: 30px;
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.quick {
+    font-size: 14px;
+    margin-top: 10%;
+    color: white;
+}
+
+.footer_nav {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.footer_nav:hover {
+    color: #01b3a7;
+}
+
+.footer_news {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.footer_news:hover {
+    color: #50ba87;
+
+}
+
+@media only screen and (min-width:300px) and (max-width:768px) {
+
+    .navigation {
+        justify-content: none;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 30vh;
+    }
+
+    .nav_icon img {
+        padding: 20px;
+        background-color: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav_icon_main {
+        display: block;
+        position: relative;
+        bottom: 12px;
+    }
+
+    .nav-link {
+        padding: 10px;
+        margin: 10px 10px 10px 0vh;
+        font-size: 2.5rem;
+    }
+    .logo_img {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .img_social_main button {
+        font-size: 2rem;
+        padding:10%;
+        margin-right: 30px;
+    }
+    .Btn_logo
+    {
+      position: relative;
+      right: 20px;
+    }
+    
+    .img_social_main {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 7%;
+    }
+    .card_head {
+        grid-template-columns: none;
+        position: relative;
+        top: 0px;
+        right: 4%;
+        justify-content: center;
+    }
+
+    .card_head img {
+        width: 110%;
+        margin: 20px;
+    }
+
+    .card_img_txt {
+        color: white;
+        position: relative;
+        font-size: 2.2rem;
+        left: 25%;
+        bottom: 25%;
+    }
+
+    #service_head {
+        font-size: 3.5rem;
+    }
+
+    .our_service {
+        background-color: white;
+        display: grid;
+        grid-template-columns: none;
+        display: inline-block;
+        margin-left: 10%;
+        row-gap: 20px;
+    }
+
+    .our_service1 {
+        margin: 30px;
+    }
+
+    .our_service1_txt {
+        font-size: 3rem;
+        margin-top: -15%;
+        margin-left: 13%;
+    }
+
+    .our_service1 img {
+
+        height: 100px;
+        width: 100px;
+    }
+
+    .service_content {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    .tours_arrow {
+        font-size: 2.5rem;
+    }
+
+    .limited_offers {
+        display: inline-block;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #other_arrow img {
+        height: 85px;
+        width: 85px;
+        top: 35px;
+        left: 6px;
+    }
+
+    #limited_offers_contant {
+        padding: 11%;
+    }
+
+    #limited_offers_contant img {
+        height: 40px;
+    }
+
+    .review {
+        font-size: 2.5rem;
+        margin: 11px 0px 0px 10px;
+    }
+
+    #location {
+        font-size: 2.1rem;
+    }
+
+    #offer_text {
+        font-size: 2rem;
+    }
+
+    .offer_button {
+        font-size: 1.9rem;
+        height: 70px;
+        width: 220px;
+    }
+
+    #amount {
+        font-size: 2rem;
+        height: 5%;
+        width: 14%;
+        right: 43px;
+    }
+
+    .time {
+        font-size: 2rem;
+        width: 15%;
+    }
+
+    #service_head_card {
+        font-size: 3.2rem;
+    }
+
+    .card_main {
+        margin-left: 22%;
+        display: block;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .card {
+        margin: 20px;
+        width: 500px;
+        height: 500px;
+        padding: 10px 20px 20% 20px;
+    }
+
+    .card_image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card img:hover {
+        border: 10px solid #01b3a7;
+    }
+
+    .people {
+        margin: 30px 25px;
+        cursor: pointer;
+        font-size: 2.8rem;
+    }
+
+    .people2 {
+        font-size: 2.2rem;
+    }
+
+    .card_content {
+        padding: 45px;
+    }
+
+    .first_class_head {
+        font-size: 3.9rem;
+    }
+
+    .first_class_head2 {
+        font-size: 3.4rem;
+    }
+
+    .first_class_para {
+        font-size: 2rem;
+    }
+
+    .first_class_btn {
+        font-size: 2rem;
+        padding: 15px 30px;
+    }
+
+
+    .card_main_review {
+        margin-left: 22%;
+        display: block;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .card_image_review img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .people_review {
+        font-size: 2rem;
+    }
+
+    #email {
+        margin-top: 25px;
+    }
+
+    input[type="text"] {
+        font-size: 2rem;
+        padding: 20px 55px;
+    }
+
+    #Email_button {
+        padding: 20px 25px;
+        font-size: 2rem;
+    }
+
+    #btn_text {
+        display: none;
+    }
+
+    .blogpost {
+        display: block;
+        grid-template-rows: 1fr 1fr;
+        margin: 20px 20px 20px 20%;
+    }
+
+    .blogcard {
+        height: 15%;
+        width: 70%;
+        top: -90px;
+        left: 22px;
+    }
+
+    .blog-head {
+        font-size: 2.2rem;
+    }
+
+    .blog-date {
+        margin: 10px 10px 0px 10px;
+        color: #01b3a7;
+        font-size: 2rem;
+    }
+
+    .blog-img img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .gallery img {
+        height: 190px;
+        width: 195px;
+    }
+
+    .end {
+        grid-template-columns: none;
+    }
+
+    .quick {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    .footer_contact {
+        font-size: 3rem;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer_nav {
+        font-size: 2.2rem;
+    }
+
+    .footer_news {
+        font-size: 2.5rem;
+    }
+
+    .footer_nav::after {
+        left: 45%;
+    }
+
+    .footer_nav:hover:after {
+        width: 10%;
+    }
+
+    .footer3 div {
+        margin: 10px;
+    }
+
+    .footer3 img {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .footer_add {
+        text-align: center;
+        margin: 10px;
+        width: 79%;
+    }
+
+    .footer_add address {
+        font-size: 2.1rem;
+        width: 79%;
+    }
+
+    .footer_num {
+        text-align: center;
+        margin: 10px;
+        font-size: 2.1rem;
+        width: 79%;
+    }
+
+    .footer_mail {
+        text-align: center;
+        margin: 10px;
+        font-size: 2.1rem;
+        width: 79%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 992px) {
+
+    .nav-link {
+        margin: 25px 12px 12px 5px;
+    }
+
+    .img_banner {
+        height: 540px;
+        width: 100%;
+        background-size: cover;
+        opacity: 1;
+        animation: banner 30s infinite;
+    }
+
+    .card_head {
+        top: 30px;
+    }
+
+    .card_head img {
+        margin-left: 15px;
+        height: 268px;
+        width: 250px;
+    }
+
+    .card_img_txt {
+        margin-left: 6%;
+        font-size: 1.7rem;
+    }
+
+    .Btn_logo {
+        border: none;
+        margin: 10px 10px 10px -10px;
+        padding: 5px 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .our_service {
+        margin: 0px;
+        row-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #service_head {
+        margin: 20px;
+    }
+
+    .our_service1 {
+
+        margin-left: 20px;
+    }
+
+    .our_service1 img {
+
+        margin: 25px;
+    }
+
+    .our_service1_txt {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        margin-top: -20%;
+        margin-left: 8%;
+    }
+
+    .service_content {
+        font-size: 1rem;
+        padding: 10%;
+        text-align: justify;
+    }
+
+    .our_service1:hover {
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+    }
+
+    #amount {
+        height: 5%;
+        width: 8%;
+        right: 35px;
+    }
+
+    .tours_arrow {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .time {
+        width: 15%;
+    }
+
+    #other_arrow img {
+        height: 65px;
+        width: 65px;
+        top: 25px;
+        left: 6px;
+    }
+
+    .card {
+        width: 330px;
+        height: 370px;
+        margin: 20px;
+    }
+
+    .card_main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-3 {
+        display: none;
+    }
+
+    .people {
+        margin: 20px;
+        font-size: 1.8rem;
+    }
+
+    .people2 {
+        font-size: 1.2rem;
+    }
+
+    .card_main_review {
+        margin-left: 0%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card_image_review img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .people_review {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .blogpost {
+        grid-template-columns: none;
+        margin: 5px 0px 10px 15%;
+    }
+
+    .blogcard {
+        width: 75%;
+        left: 25px;
+    }
+
+    .blog-img img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .blog-date {
+        font-size: 1.2rem;
+    }
+
+    .gallery img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .footer_add {
+        text-align: center;
+        width: 79%;
+        display: block;
+    }
+
+    .footer_num {
+        text-align: center;
+        width: 79%;
+    }
+
+    .footer_mail {
+        text-align: center;
+        width: 79%;
+    }
+
+}
+
+@media only screen and (min-width:993px) and (max-width: 3280px) {
+
+    #amount {
+        right: 58px;
+    }
+
+    .card_main {
+        margin-left: 0%;
+    }
+
+    .card {
+        margin: 7px;
+    }
+
+    .our_service1 img {
+        margin: 35px 35px 35px 9px;
+    }
+
+    .gallery img {
+        height: 200px;
+        width: 256px;
+    }
+
+}

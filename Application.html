@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Application Form</title>
+    <link rel="stylesheet" href="./css/Application.css">
+</head>
+<body>
+
+    <form class="Application-Card-main" id="touristForm">
+        <section class="Application-Card">
+            <h1 class="Application-head">Tourist Application Form</h1>
+            <div class="Application-main">
+                <section class="Application-one">
+                    <div class="Application-one-main">
+                        <div class="Application-txt">Full name</div>
+                        <input type="text" name="name" id="name" placeholder="Enter the Full name">
+                        <br><br>
+                        <div class="Application-txt">Preferred Destination</div>
+                        <input type="text" name="destination" id="destination"
+                            placeholder="Where would you like to travel">
+                        <br><br>
+                        <div class="Application-txt">Number of Adults</div>
+                        <input type="number" name="adult" id="adult" placeholder="Enter number of adults">
+                        <br><br>
+                    </div>
+                </section>
+                <section class="Application-one">
+                    <div>
+                        <div class="Application-txt">Email id</div>
+                        <input type="text" name="email" id="email" placeholder="Enter the Email">
+                        <br><br>
+                        <div class="Application-txt">Preferred Travel Date</div>
+                        <input type="date" name="date" id="date">
+                        <br><br>
+                        <div class="Application-txt">Number of Children</div>
+                        <input type="number" name="children" id="children" placeholder="Enter number of children">
+                        <br><br>
+                    </div>
+                </section>
+            </div>
+            <div class="Application-txt">Special Requests</div>
+            <textarea name="comment" id="comment" placeholder="Message" class="Comment-box"></textarea>
+            <br><br>
+            <button type="submit" class="Submit-btn" onclick="Application()">Submit</button>
+        </section>
+    </form>
+    <script src="./js/travelagency.js"></script>
+</body>
+</html>
