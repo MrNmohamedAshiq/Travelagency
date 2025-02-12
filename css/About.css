@@ -158,6 +158,7 @@
 
 .card img:hover {
     border: 5px solid #01b3a7;
+    border-radius: 50%;
 }
 
 .people {
